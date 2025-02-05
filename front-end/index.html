@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickethack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="logo">Tickethack</h1>
+        <nav>
+            <button id="cartButton">Cart</button>
+            <button id="bookingsButton">Bookings</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box" id="searchBox">
+                <h2>Rechercher un trajet</h2>
+                <form id="searchForm">
+                    <label for="departure">Départ</label>
+                    <input type="text" id="departure" name="departure" required>
+                    
+                    <label for="arrival">Arrivée</label>
+                    <input type="text" id="arrival" name="arrival" required>
+
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
+            <div class="box" id="resultsBox">
+                <h2>Résultats</h2>
+                <div id="results">
+                    <img src="images/train.png" id="defaultImage" alt="Train">
+                    <ul id="tripsList"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
